@@ -15,6 +15,7 @@
   ],
   "scripts": {
     "build": "node ./.github/readme-generate.js",
+    "serve": "npm run build && mkdocs serve",
     "manuallint": "node .github/manual_lint.js",
     "textlint": "textlint . --fix",
     "markdownlint": "markdownlint ./dishes ./tips",

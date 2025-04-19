@@ -7,6 +7,8 @@ edit_uri: ""
 
 use_directory_urls: true
 docs_dir: .
+exclude_docs: |
+  node_modules
 theme:
   font: false
   name: material
@@ -79,6 +81,9 @@ plugins:
       output_path: document.pdf
   - minify:
       minify_html: true
+  - git-committers:
+      repository: Anduin2017/HowToCook
+      branch: master
 
 nav:
   - README.md
